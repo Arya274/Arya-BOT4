@@ -10,9 +10,9 @@ Ketik di *[TERMUX]*
 4) $pkg install nodejs
 
 Untuk Githubnya..
-5) $git clone https://github.com/Arya274/Arya-BOT3
+5) $git clone https://github.com/Arya274/Arya-BOT4
 6) $ls
-7) $cd Arya-BOT3
+7) $cd Arya-BOT4
 
 yang *terakhirr*..
 Penginstalannya cuy :)
