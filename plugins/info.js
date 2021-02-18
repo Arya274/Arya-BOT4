@@ -6,7 +6,7 @@ Dibuat dengan javascript via NodeJs,Ffmpeg,dan ImageMagick
 Rec: Drawl Nag
 Script: @Nurotomo
 Github: 
-https://github.com/Arya274/Arya-BOT3
+https://github.com/Arya274/Arya-BOT4
 
 *Sosmed :*
 Kritik kami di sosmed ataupun YouTube.
