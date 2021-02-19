@@ -35,6 +35,7 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
     let totalreg = Object.keys(global.DATABASE._data.users).length
     let tags = {
       'main': 'Main',
+      'info': 'Info BOT',
       'xp': 'Exp & Limit',
       'sticker': 'Sticker',
       'kerang': 'Kerang Ajaib',
@@ -49,7 +50,6 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
       'owner': 'Owner',
       'host': 'Host',
       'advanced': 'Advanced',
-      'info': 'Info',
       '': 'No Category',
     }
     for (let plugin of Object.values(global.plugins))
@@ -73,26 +73,37 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
     }
     conn.menu = conn.menu ? conn.menu : {}
     let before = conn.menu.before || `
-╭─「 ${conn.getName(conn.user.jid)} 」
-│ Hai, %name!
-│
-│ *%exp XP*
-│ Tersisa *%limit Limit*
-│
-│ Tanggal: *%week %weton, %date*
-│ Waktu: *%time*
-│
-│ Uptime: *%uptime*
-│ Main Uptime: *%muptime*
-│ Database: %totalreg nomor
-│ Github:
-│ %github
-╰────
+╭════•›「 ${conn.getName(conn.user.jid)} 」
+╿  Hai, %name !
+╿ Total : *%exp XP*
+╿ Tersisa : *%limit Limit*
+╿
+╿ Hari : *%week*
+╿ Tanggal : *%date*
+╿ Waktu : *%time*
+╿ Lama Aktif : *%uptime*
+╿ Database : %totalreg Nomor
+╰═══════════════
+
+╭════•›「 Sosmed 」
+╿ Github :
+╿ https://github.com/Arya274/Arya-BOT3
+╿ Youtube : Drawl Nag
+╿ Instagram : @arpunchs
+╰═══════════════
+
+╭════•›「 Rules 」
+╿• Telpon/VC = BAN/BLOKIR
+╿• Spam = BLOKIR
+╿• Ingin Donasi ?
+╿    => Hubungi #creator
+╰═══════════════
+
 %readmore`
-    let header = conn.menu.header || '╭─「 %category 」'
-    let body   = conn.menu.body   || '│ • %cmd%islimit'
-    let footer = conn.menu.footer || '╰────\n'
-    let after  = conn.menu.after  || (conn.user.jid == global.conn.user.jid ? '' : `Powered by https://wa.me/${global.conn.user.jid.split`@`[0]}`) + `\n*%npmname@^%version*\n\`\`\`\%npmdesc\`\`\``
+    let header = conn.menu.header || '╭════•›「 %category 」'
+    let body   = conn.menu.body   || ' ╿ %cmd%islimit'
+    let footer = conn.menu.footer || '╰══════════\n'
+    let after  = conn.menu.after  || (conn.user.jid == global.conn.user.jid ? '' : `Powered bye\nBOT NFQ: ${global.conn.user.jid.split`@`[0]}`) + `\n*%npmname@^%version*\n\`\`\`\%npmdesc\`\`\``
     let _text  = before + '\n'
     for (let tag in groups) {
       _text += header.replace(/%category/g, tags[tag]) + '\n'
