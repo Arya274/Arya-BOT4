@@ -43,4 +43,4 @@ Script: @Nurutomo
 
 </p>
 
-[GITHUB](https://github.com/Arya274)
+OFFICIAL: [GITHUB](https://github.com/Arya274)
