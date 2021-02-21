@@ -87,7 +87,7 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 
 ╭════•›「 Sosmed 」
 ╿ Github :
-╿ https://github.com/Arya274/Arya-BOT3
+╿ https://github.com/Arya274/Arya-BOT4
 ╿ Youtube : Drawl Nag
 ╿ Instagram : @arpunchs
 ╰═══════════════
