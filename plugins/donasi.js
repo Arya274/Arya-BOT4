@@ -5,7 +5,7 @@ let handler = async m => m.reply(`
 │ • Gopay [081357302007]
 ╰────
 ╭─「 Hubungi 」
-│ > Ingin donasi? Wa.me/6281357302007
+│ > Ingin donasi? Wa.me/081262309422
 ╰────
 
 Ini *#caranya untuk Donasi*
